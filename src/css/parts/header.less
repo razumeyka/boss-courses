@@ -1,0 +1,181 @@
+.logo-line {
+    padding: 23px 0;
+}
+
+.logo-line .wrapper {
+    align-items: center;
+    position: relative;
+}
+
+.logo-line__info {
+    font-size: 14px;
+}
+
+.logo-line__caption {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo-line__small-caption {
+    margin: 5px 0 10px;
+}
+
+.logo-line__description {
+    color: #7b7b7b;
+}
+
+.logo {
+    background: url(../../images/logo.svg) no-repeat center;
+    width: 175px;
+    height: 110px;
+}
+
+.logo-line__logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.logo-line__contacts {
+    max-width: 210px;
+}
+
+.logo-line__phone {
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    color: #181818;
+    text-align: right;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.logo-line__address {
+    font-size: 14px;
+    text-align: right;
+    letter-spacing: .2px;
+}
+
+.menu-line {
+    background: #1453a1;
+}
+
+.menu-line .wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    letter-spacing: .04em;
+}
+
+.menu li {
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+.menu a {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: .1px;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 25px;
+    transition: color .2s linear;
+}
+
+.sub-menu {
+    display: block;
+    background: rgb(0,0,0);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+}
+
+.menu li:hover>.sub-menu {
+    display: block;
+}
+
+.sub-menu.active {
+    display: block;
+}
+
+.sub-menu li {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #ffffff;
+}
+
+.sub-menu li a {
+    position: relative;
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    text-transform: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+
+/*burger*/
+
+.burger {
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 42px;
+    right: 15px;
+    top: 56px;
+    cursor: pointer;
+    border: 2px solid rgb(0,0,0);
+    border-radius: 3px;
+}
+
+.burger span, .burger span::before, .burger span::after {
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 3px;
+    width: 30px;
+    background: rgb(0,0,0);
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    transition: all 200ms ease-in-out;
+}
+
+.burger span::before {
+    content: '';
+    left: 0;
+}
+
+.burger span::after {
+    content: '';
+    left: 0;
+    top: 20px;
+}
+
+.burger_active span {
+    background-color: transparent;
+}
+    
+ .burger_active span::before  {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+ .burger_active span::after  {
+    transform: rotate(-45deg);
+    top: 10px;
+} 
