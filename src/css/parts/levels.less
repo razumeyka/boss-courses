@@ -20,21 +20,40 @@
 }
 
 .plates__plate {
+	display: block;
+	text-decoration: none;
 	border-right: 1px solid rgb(164, 164, 164);
 	padding: 0 20px 20px;
-	transition: all 0.7s linear; 
+	transition: all 0.3s linear; 
 }
 
 .plates__plate:hover {
 	background: rgb(255,255,255);
-	padding: 40px;
+	border: none;
+	position: relative;
+	z-index: 2;
+}
+
+.plates__plate-wr:after {
+    content: '';
+    background: rgb(255,255,255);
 	box-shadow: 0px 0px 6px 0px rgba(84, 109, 229, 0.2);
 	border: 1px solid rgb(164, 164, 164);
-	position: absolute;
-	top: -20px;
-	bottom: -20px;
-	right: -20px;
-	left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+    opacity: 0;
+    transform: scale(.5);
+    transition: all .3s;
+}
+
+.plates__plate-wr:hover:after {
+    opacity: 1;
+    transform: scale(1);
+	z-index: 1;
 }
 
 .plates__plate:hover .plates__button {
