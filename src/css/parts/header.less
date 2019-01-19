@@ -25,6 +25,7 @@
 }
 
 .logo {
+	display: block;
     background: url(../../images/logo.svg) no-repeat center;
     width: 175px;
     height: 110px;
@@ -87,7 +88,6 @@
     color: #fff;
     text-decoration: none;
     padding: 13px 25px;
-    transition: color .2s linear;
 }
 
 .sub-menu {
@@ -118,6 +118,8 @@
 }
 
 .sub-menu li a {
+	box-sizing: border-box;
+	width: 100%;
     position: relative;
     font-size: 14px;
     line-height: 1.5;
@@ -129,16 +131,27 @@
 
 /*burger*/
 
+.mobile-menu {
+	display: none;
+	box-sizing: border-box;
+	background: #f8be1e;
+    cursor: pointer;
+    height: 42px;
+	font-size: 20px;
+    line-height: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(255,255,255);
+	padding: 0 10px;
+	margin: 10px 0;
+}
+
 .burger {
-    display: none;
-    position: absolute;
+    display: block;
     width: 40px;
     height: 42px;
-    right: 15px;
-    top: 56px;
-    cursor: pointer;
-    border: 2px solid rgb(0,0,0);
-    border-radius: 3px;
+	position: relative;
+	margin-left: 10px;
 }
 
 .burger span, .burger span::before, .burger span::after {
@@ -147,7 +160,7 @@
     border-radius: 5px;
     height: 3px;
     width: 30px;
-    background: rgb(0,0,0);
+    background: rgb(255,255,255);
     position: absolute;
     top: 10px;
     right: 5px;
@@ -178,3 +191,82 @@
     transform: rotate(-45deg);
     top: 10px;
 } 
+
+/*media*/ 
+
+@media screen and (max-width: 1279px) {
+    .mobile-menu {
+        display: flex;
+    }
+    
+    header .menu {
+		display: none;
+		height: auto;
+		position: absolute;
+		top: 188px;
+		left: 0;
+		margin: 0;
+		width: 100%;
+		text-align: center;
+		background: rgba(20,83,161,.8);
+		z-index: 1;
+		padding: 0;
+	}
+    
+    header .menu li {
+        float: none;
+    }
+    
+    header .menu li a {
+        display: block;
+        border-bottom: 1px solid #f5f5f5;
+        padding: 15px;
+    }
+    
+    header .menu li:hover .sub-menu {
+        display: none;
+    }
+    
+    header .menu li .sub-menu {
+        position: static;
+        background: #f5f5f5;
+    }
+    
+    header .sub-menu li {
+        border-bottom: 1px solid #3c8055;
+    }
+    
+    header .sub-menu li a {
+        color: #1453a1;;
+    }	
+}
+
+@media screen and (max-width: 1023px) {
+    .logo-line__info {
+		display: none;
+	}
+	
+	.logo-line__logo {
+		position: static;
+		margin: 0;
+	}
+	
+	header .menu {
+		top: 219px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (max-width: 639px) {
+    .logo-line__address {
+		display: none;
+	}
+	
+	.logo-line__phone {
+		margin: 0;
+		font-size: 20px;
+	}
+}

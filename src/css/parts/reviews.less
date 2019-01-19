@@ -23,18 +23,18 @@
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100%;
+	padding: 30px 40px;
 }
 
 .reviews__text {
 	font-size: 16px;
 	line-height: 1.8;
-	padding: 33px 38px 25px;
+	padding-bottom: 20px;
 }
 
 .reviews__name {
 	font-size: 18px;
-	text-align: right;
-	padding: 0 40px 28px;
+	font-weight: 700;
 	align-items: center;
 }
 
@@ -57,11 +57,29 @@
 }
 
 @media screen and (max-width: 1023px) {
-    
+	.reviews__item-wr {
+		width: 50%;
+	}
+	
+    .reviews__item-wr:first-child {
+		display: none;
+	}
+	
+	.reviews__button {
+		width: 100%;
+		max-width: 300px;
+	}
 }
 
 @media screen and (max-width: 767px) {
-    
+    .reviews__item-wr {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	
+    .reviews__item-wr:first-child {
+		display: block;
+	}
 }
 
 @media screen and (max-width: 639px) {

@@ -27,12 +27,12 @@
 	transition: all 0.3s linear; 
 }
 
-.plates__plate:hover {
+.plates__plate-wr:hover .plates__plate  {
 	background: rgb(255,255,255);
+	position: relative;   
+	z-index: 10; 
 	border: none;
-	position: relative;
-	z-index: 2;
-}
+} 
 
 .plates__plate-wr:after {
     content: '';
@@ -68,11 +68,16 @@
 .plates__level {
     box-sizing: border-box;
     background-color: #002a5d;
+	border-radius: 0 0 3px 3px;
     font-size: 14px;
     color: #fff;
     padding: 10px 10px 15px;
     max-width: 80px;
     margin: 0 auto 22px;
+}
+
+.plates__plate-wr:hover .plates__level {
+	border-radius: 3px;
 }
 
 .plates__level span {
@@ -128,15 +133,43 @@
 /*media*/ 
 
 @media screen and (max-width: 1279px) {
-    
+    .plates__content {
+		justify-content: center;
+		border: none;
+		background-color: #ffffff;
+		box-shadow: none;
+		margin: 0 -10px;
+	}
+
+	.plates__plate-wr {
+		width: 33.3333%;
+		padding: 10px;
+	}
+	
+	.plates__plate {
+		border: 1px solid rgb(164, 164, 164);
+		background-color: rgba(247, 247, 247, 0.38);
+		box-shadow: 0px 0px 4px 0px rgba(84, 109, 229, 0.15);
+	}
+	
+	.plates__plate-wr:hover .plates__plate {
+		box-shadow: none;
+		border: none;
+	}
+
 }
 
 @media screen and (max-width: 1023px) {
-    
+    .plates__plate-wr {
+		width: 50%;
+		max-width: 350px;
+	}
 }
 
 @media screen and (max-width: 767px) {
-    
+    .plates__plate-wr {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 639px) {

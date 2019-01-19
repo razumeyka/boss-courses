@@ -37,6 +37,7 @@
     -moz-transition: margin-top 0.5s ease-out 0s;
     -o-transition: margin-top 0.5s ease-out 0s;
     transition: margin-top 0.5s ease-out 0s;
+	position: relative;
 }
 
 .photo-info__text {
@@ -67,7 +68,13 @@
 }
 
 @media screen and (max-width: 1023px) {
-    
+    .photo-info__photo {
+		display: none;
+	}
+	
+	.photo-info__info {
+		max-width: none;
+	}
 }
 
 @media screen and (max-width: 767px) {
