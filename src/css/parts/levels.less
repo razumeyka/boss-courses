@@ -8,8 +8,7 @@
 }
 
 .plates__content {
-	border: 1px solid rgb(164, 164, 164);
-	background-color: rgba(247, 247, 247, 0.38);
+	border: 1px solid #dadada;
 	box-shadow: 0px 0px 4px 0px rgba(84, 109, 229, 0.15);
 }
 
@@ -21,8 +20,9 @@
 
 .plates__plate {
 	display: block;
+	background-color: #f7f7f7;
 	text-decoration: none;
-	border-right: 1px solid rgb(164, 164, 164);
+	border-right: 1px solid #dadada;
 	padding: 0 20px 20px;
 	transition: all 0.3s linear; 
 }
@@ -38,7 +38,7 @@
     content: '';
     background: rgb(255,255,255);
 	box-shadow: 0px 0px 6px 0px rgba(84, 109, 229, 0.2);
-	border: 1px solid rgb(164, 164, 164);
+	border: 1px solid #dadada;
     width: calc(100% + 40px);
     height: calc(100% + 40px);
     position: absolute;
@@ -61,8 +61,10 @@
 	color: rgb(255,255,255);
 }
 
-.plates__plate-wr:last-child .plates__plate {
-	border: none;
+@media screen and (min-width: 1280px) {
+	.plates__plate-wr:last-child .plates__plate {
+		border: none;
+	}
 }
 
 .plates__level {
@@ -133,12 +135,15 @@
 /*media*/ 
 
 @media screen and (max-width: 1279px) {
+	.plates {
+		padding: 60px 0 20px;
+	}
+	
     .plates__content {
 		justify-content: center;
 		border: none;
-		background-color: #ffffff;
 		box-shadow: none;
-		margin: 0 -10px;
+		margin: 25px -10px 0;
 	}
 
 	.plates__plate-wr {
@@ -147,8 +152,7 @@
 	}
 	
 	.plates__plate {
-		border: 1px solid rgb(164, 164, 164);
-		background-color: rgba(247, 247, 247, 0.38);
+		border: 1px solid #dadada;
 		box-shadow: 0px 0px 4px 0px rgba(84, 109, 229, 0.15);
 	}
 	

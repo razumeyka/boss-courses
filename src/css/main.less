@@ -18,6 +18,108 @@
 	padding-top: 65px;
 	display: flex;
 	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+}
+
+.clouds-dark {
+    background: url(../images/clouds-2.svg) repeat no-repeat center;
+    background-size: contain;
+    height: 300px;
+    width: 100%;
+	position: absolute;
+	bottom: 315px;
+	left: 0;
+	right: 0;
+	animation: clouds-dark 170s infinite linear;
+}
+
+@keyframes clouds-dark {
+	100% {
+		transform: translateX(-1000px);
+	}
+}
+
+.clouds-light {
+    background: url(../images/clouds-1.svg) repeat no-repeat center;
+    background-size: contain;
+    height: 300px;
+    width: 100%;
+	position: absolute;
+	bottom: 315px;
+	left: 0;
+	right: 0;
+	animation: clouds-light 170s infinite linear;
+}
+
+@keyframes clouds-light {
+	100% {
+		transform: translateX(1000px);
+	}
+}
+
+.sea {
+	background: url(../images/waves.svg) repeat center #61c2d0;
+	height: 315px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	animation: sea 100s infinite linear;
+}
+
+@keyframes sea {
+	100% {
+		transform: translateX(1000px);
+	}
+}
+
+.ship {
+	background: url(../images/ship.svg) no-repeat center;
+	width: 510px;
+	height: 350px;
+	position: absolute;
+	bottom: 200px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	animation: rotate 10s linear infinite;
+	transform-origin: 50% 65%;
+}
+
+@keyframes rotate {
+	from {
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+	50% {
+        transform: rotate(0deg);
+    }
+	75% {
+        transform: rotate(-5deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.icebergs {
+	background: url(../images/icebergs.svg) repeat no-repeat center;
+	background-size: contain;
+	height: 200px;
+	width: 100%;
+	position: absolute;
+	bottom: 200px;
+	animation: iceberg 150s infinite linear;
+}
+
+@keyframes iceberg {
+	
+	100% {
+		transform: translateX(1000px);
+	}
 }
 
 .main-screen__caption {
@@ -26,6 +128,8 @@
 	text-align: center;
 	line-height: 1.2;
 	margin-bottom: 15px;
+	z-index: 10;
+	position: relative;
 }
 
 .main-screen__caption span {
@@ -37,6 +141,8 @@
 	font-size: 20px;
 	color: rgb(123, 123, 123);
 	text-align: center;
+	z-index: 10;
+	position: relative;
 }
 
 
