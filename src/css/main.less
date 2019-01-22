@@ -31,12 +31,11 @@
 	bottom: 315px;
 	left: 0;
 	right: 0;
-	animation: clouds-dark 40s infinite linear;
+	animation: clouds-dark 550s infinite linear;
 }
 
-@keyframes clouds-dark {
-	from {background-position: 0px;}
-    to {background-position: -1000px;}
+@keyframes clouds-dark { 
+    to {background-position: -4500px;}
 }
 
 .clouds-light {
@@ -48,12 +47,11 @@
 	bottom: 315px;
 	left: 0;
 	right: 0;
-	animation: clouds-light 40s infinite linear;
+	animation: clouds-light 550s infinite linear;
 }
 
-@keyframes clouds-light {
-	from {background-position: 0px;}
-    to {background-position: 1000px;}
+@keyframes clouds-light { 
+    to {background-position: 4050px;}
 }
 
 .sea {
@@ -64,12 +62,11 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	animation: sea 30s infinite linear;
+	animation: sea 60s infinite linear;
 }
 
-@keyframes sea {
-	from {background-position: 0px;}
-    to {background-position: 1000px;}
+@keyframes sea { 
+    to {background-position: 20000px;}
 }
 
 .ship {
@@ -81,7 +78,7 @@
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	animation: rotate 10s linear infinite;
+	animation: rotate 2s ease-out infinite;
 	transform-origin: 50% 65%;
 }
 
@@ -89,13 +86,13 @@
 	from {
     }
     25% {
-        transform: rotate(5deg);
+        transform: rotate(2deg);
     }
 	50% {
         transform: rotate(0deg);
     }
 	75% {
-        transform: rotate(-5deg);
+        transform: rotate(-2deg);
     }
     to {
         transform: rotate(0deg);
@@ -109,12 +106,11 @@
 	width: 100%;
 	position: absolute;
 	bottom: 200px;
-	animation: iceberg 20s infinite linear;
+	animation: iceberg 70s infinite linear;
 }
 
-@keyframes iceberg {
-	from {background-position: 0px;}
-    to {background-position: 1000px;}
+@keyframes iceberg { 	
+    to {background-position: 10000px;}
 }
 
 .main-screen__caption {
