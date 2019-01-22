@@ -31,17 +31,16 @@
 	bottom: 315px;
 	left: 0;
 	right: 0;
-	animation: clouds-dark 170s infinite linear;
+	animation: clouds-dark 40s infinite linear;
 }
 
 @keyframes clouds-dark {
-	100% {
-		transform: translateX(-1000px);
-	}
+	from {background-position: 0px;}
+    to {background-position: -1000px;}
 }
 
 .clouds-light {
-    background: url(../images/clouds-1.svg) repeat no-repeat center;
+    background: url(../images/clouds-1.svg) repeat-x center;
     background-size: contain;
     height: 300px;
     width: 100%;
@@ -49,13 +48,12 @@
 	bottom: 315px;
 	left: 0;
 	right: 0;
-	animation: clouds-light 170s infinite linear;
+	animation: clouds-light 40s infinite linear;
 }
 
 @keyframes clouds-light {
-	100% {
-		transform: translateX(1000px);
-	}
+	from {background-position: 0px;}
+    to {background-position: 1000px;}
 }
 
 .sea {
@@ -66,13 +64,12 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	animation: sea 100s infinite linear;
+	animation: sea 30s infinite linear;
 }
 
 @keyframes sea {
-	100% {
-		transform: translateX(1000px);
-	}
+	from {background-position: 0px;}
+    to {background-position: 1000px;}
 }
 
 .ship {
@@ -106,20 +103,18 @@
 }
 
 .icebergs {
-	background: url(../images/icebergs.svg) repeat no-repeat center;
+	background: url(../images/icebergs.svg) repeat-x center;
 	background-size: contain;
 	height: 200px;
 	width: 100%;
 	position: absolute;
 	bottom: 200px;
-	animation: iceberg 150s infinite linear;
+	animation: iceberg 20s infinite linear;
 }
 
 @keyframes iceberg {
-	
-	100% {
-		transform: translateX(1000px);
-	}
+	from {background-position: 0px;}
+    to {background-position: 1000px;}
 }
 
 .main-screen__caption {
