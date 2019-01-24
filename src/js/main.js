@@ -21,7 +21,7 @@ $(document).ready(function(){
 	function topslider_change(){
 		var countslides=$('.topslider').children().length;
 		var slide=($('.topslider').data('slide'));
-		var rez=100/(countslides*slide);
+		var rez=100/countslides*slide;
 		slide++;
 		if(slide>=countslides)slide=0;
 		$('.topslider').data('slide',slide).css('transform','translateY(-'+rez+'%)');		
