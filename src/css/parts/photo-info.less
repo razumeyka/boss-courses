@@ -3,6 +3,10 @@
 	background-image: linear-gradient( 90deg, rgb(0,68,153) 0%, rgb(55,224,255) 100%);
 }
 
+.photo-info .wrapper {
+	overflow: hidden;
+}
+
 .photo-info__photo {
 	background: url(../../images/book.svg) no-repeat center;
 	background-size: auto 100%;
@@ -23,9 +27,11 @@
 }
 
 .photo-info__info {
+	flex: 1;
     max-width: 370px;
-	padding: 80px 0;
-    flex: 1;
+	height: 400px;
+	display: flex;  
+	align-items: center;
 }
 
 .topslider_wrapper {
@@ -41,8 +47,10 @@
 	position: relative;
 }
 
-.photo-info__text {
-	height: 100%;
+.start {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
 }
 
 .photo-info__caption {
@@ -76,6 +84,11 @@
 	.photo-info__info {
 		max-width: none;
 	}
+	
+	.topslider_wrapper {
+		text-align: center;
+		margin: 0 auto;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -83,5 +96,7 @@
 }
 
 @media screen and (max-width: 639px) {
-    
+    .topslider_wrapper {
+		height: 300px;
+	}
 }
