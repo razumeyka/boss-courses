@@ -122,6 +122,24 @@ h1,h2,h3,h4,h5 {
     margin: 0 auto;
 }
 
+/* double-colums  */
+
+.double-colums {
+    overflow: hidden;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-block {
+    flex: 1;
+}
+
+.right-block {
+    width: 300px;
+    margin-left: 50px;
+}
+
 /*media*/ 
 
 @media screen and (max-width: 1279px) {
@@ -131,7 +149,16 @@ h1,h2,h3,h4,h5 {
 }
 
 @media screen and (max-width: 1023px) {
-    
+    .double-colums {
+		flex-direction: column;
+	}
+	
+	.right-block {
+		margin: 30px auto 0;
+		width: 100%;
+		max-width: 380px;
+
+	}
 }
 
 @media screen and (max-width: 767px) {
