@@ -30,4 +30,11 @@ $(document).ready(function(){
 		})
 	};
 	setInterval(function(){topslider_change()},3000);
+	
+// accordion
+	
+    $('.accordion__information').hide();
+    $('.accordion__caption').click(function(){
+        $(this).next().slideToggle(500);
+    });
 }); 
