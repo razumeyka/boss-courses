@@ -1,4 +1,5 @@
 @@include('./lib/jquery.fancybox.min.js')
+@@include('./lib/sticky-kit.js')
 
 $(document).ready(function(){
     

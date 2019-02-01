@@ -38,6 +38,10 @@
 	padding: 0 7px;
 }
 
+.main-screen__form .wpcf7-form-control-wrap_button {
+	width: calc(33.3333% - 14px);
+}
+
 .wpcf7-form-control-wrap_button {
 	margin: 0 auto;
 }
@@ -56,6 +60,15 @@
 
 .wpcf7-form-control:not([type=submit]):focus{
     border: 1px solid #1453a1;
+}
+
+.wpcf7-form-control-wrap textarea {
+    padding: 15px;
+    height: 80px;
+    min-height: 80px;
+    resize: vertical;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .inner-page__form {
@@ -78,9 +91,16 @@
 		align-items: center;
 	}
 	
-	.wpcf7-form-control-wrap {
+	.form__inputs .wpcf7-form-control-wrap {
 		width: 100%;
 		max-width: 300px;
+		padding: 0;
+	}
+	
+	.main-screen__form .wpcf7-form-control-wrap_button {
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto;
 	}
 }
 

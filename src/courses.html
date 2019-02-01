@@ -5,8 +5,15 @@
     @@include('template/header.html')
     <div class="inner-page">
 		<div class="wrapper">
-			<h1 class="inner-caption">Перечень курсов</h1>
-			@@include('template/accordion.html')
+			<div class="double-colums">
+				<div class="left-block">
+					<h1 class="inner-caption">Перечень курсов</h1>
+					@@include('template/accordion.html')
+				</div>
+				<div class="right-block">
+					@@include('template/inner-form.html') 
+				</div>
+			</div>	
 		</div>
     </div>
     @@include('template/footer.html')          
