@@ -38,4 +38,11 @@ $(document).ready(function(){
     $('.accordion__caption').click(function(){
         $(this).next().slideToggle(500);
     });
+	
+//sticky-kit
+	
+	var ww=window.innerWidth;
+	if(ww>1200){
+		$(".right_block").stick_in_parent();
+	}
 }); 
