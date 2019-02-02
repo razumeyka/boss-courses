@@ -43,6 +43,7 @@ $(document).ready(function(){
 	
 	var ww=window.innerWidth;
 	if(ww>1200){
-		$(".right_block").stick_in_parent();
+		$(".inner-page__form").stick_in_parent();
+		$(document.body).trigger("sticky_kit:recalc");
 	}
 }); 
