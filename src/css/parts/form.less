@@ -4,8 +4,12 @@
 }
 
 .form {
-	background-color: rgba(20, 83, 161, 0.6);
-	padding: 20px 0 30px;
+    background-color: rgba(20,83,161,.9);
+    padding: 20px 0 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .form__caption{
@@ -23,7 +27,7 @@
 }
 
 .wpcf7 {
-    max-width: 950px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -34,12 +38,12 @@
 }
 
 .form__inputs .wpcf7-form-control-wrap{
-	width: 33.3333%;
+	width: 25%;
 	padding: 0 7px;
 }
 
 .main-screen__form .wpcf7-form-control-wrap_button {
-	width: calc(33.3333% - 14px);
+	width: calc(50% - 14px); 
 }
 
 .wpcf7-form-control-wrap_button {
@@ -82,10 +86,6 @@
 }
 
 @media screen and (max-width: 1023px) {
-    
-}
-
-@media screen and (max-width: 767px) {
     .form__inputs {
 		flex-direction: column;
 		align-items: center;
@@ -102,6 +102,25 @@
 		max-width: 300px;
 		margin: 0 auto;
 	}
+	
+	.form {
+		background-color: rgb(20, 83, 161);
+		padding: 30px 0 40px;
+	}
+	
+	.form__caption{
+		max-width: 300px;
+		margin: 0 auto 20px;
+		font-size: 26px;
+	}
+	
+	.form__after-caption{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
 }
 
 @media screen and (max-width: 639px) {

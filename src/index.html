@@ -5,17 +5,23 @@
     @@include('template/header.html')
     <div class="main-screen">
     	<div class="wrapper">
-			<h1 class="main-screen__caption">Добро пожаловать<br> в академию молодых лидеров <span>New leaders</span></h1>
+			<h1 class="main-screen__caption">Добро пожаловать<br> в академию молодых лидеров <span>New&nbsp;leaders</span></h1>
 			<div class="main-screen__after-caption">Позаботьтесь о будущем ребенка сегодня, записывайтесь на курсы сейчас!</div>
     	</div>
-    	<div class="clouds-dark"></div>
-    	<div class="clouds-light"></div>
-    	<div class="sea"></div>
-    	<div class="ship"></div>
-    	<div class="icebergs"></div>
+		<div class="animated-blocks">
+			
+			<div class="sea">
+				<div class="clouds-dark"></div>
+				<div class="clouds-light"></div>
+				<div class="ship"></div>
+				<div class="icebergs"></div>
+			</div>
+			
+		</div>
     	@@include('template/form.html')
     </div>
 	@@include('template/banner.html')
+	@@include('template/about-us.html')
     @@include('template/advantages.html')
     @@include('template/photo-info.html')
     @@include('template/levels.html') 
