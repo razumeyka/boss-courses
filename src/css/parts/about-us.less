@@ -6,11 +6,13 @@
 	padding: 55px 0 20px;
 	position: relative;
 	background:	#ecf8ff;
+	overflow: hidden;
 }
 
 .about-us:before{
 	content:'';
 	background: url(../../images/big-star.svg) no-repeat;
+	background-size: cover;
 	width: 1285px;
 	height: 500px;
 	position: absolute;
@@ -21,9 +23,33 @@
 }
 
 .about-us__image{
-	height: 421px;
-	width: 626px;
+    height: 430px;
+    width: 640px;
 	margin: 40px auto 0;
 	background: url(../../images/star-children.png);
 	background-size: cover;
+}
+
+
+@media screen and (max-width: 1279px) {
+	
+	.about-us:before{
+		width: 1095px; 
+		bottom: -20px;
+	}
+	
+}
+
+
+@media screen and (max-width: 767px) {
+
+.about-us__image,
+.about-us:before{
+	display: none;
+}
+
+.about-us {
+    padding: 55px 0;
+}
+
 }

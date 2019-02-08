@@ -27,13 +27,6 @@
 	transition: all 0.3s linear; 
 }
 
-.plates__plate-wr:hover .plates__plate  {
-	background: rgb(255,255,255);
-	position: relative;   
-	z-index: 10; 
-	border: none;
-} 
-
 .plates__plate-wr:after {
     content: '';
     background: rgb(255,255,255);
@@ -48,24 +41,7 @@
     opacity: 0;
     transform: scale(.5);
     transition: all .3s;
-}
-
-.plates__plate-wr:hover:after {
-    opacity: 1;
-    transform: scale(1);
-	z-index: 1;
-}
-
-.plates__plate:hover .plates__button {
-	background: #1453a1;
-	color: rgb(255,255,255);
-}
-
-@media screen and (min-width: 1280px) {
-	.plates__plate-wr:last-child .plates__plate {
-		border: none;
-	}
-}
+} 
 
 .plates__level {
     box-sizing: border-box;
@@ -134,6 +110,32 @@
 
 /*media*/ 
 
+@media screen and (min-width: 1279px) {
+	
+	.plates__plate-wr:hover .plates__plate  {
+		background: rgb(255,255,255);
+		position: relative;   
+		z-index: 10; 
+		border: none;
+	} 
+
+	.plates__plate-wr:hover:after {
+		opacity: 1;
+		transform: scale(1);
+		z-index: 1;
+	}
+
+	.plates__plate:hover .plates__button {
+		background: #1453a1;
+		color: rgb(255,255,255);
+	}
+	
+	.plates__plate-wr:last-child .plates__plate {
+		border: none;
+	}
+}
+
+
 @media screen and (max-width: 1279px) {
 	.plates {
 		padding: 60px 0 20px;
@@ -154,11 +156,11 @@
 	.plates__plate {
 		border: 1px solid #dadada;
 		box-shadow: 0px 0px 4px 0px rgba(84, 109, 229, 0.15);
-	}
+	} 
 	
-	.plates__plate-wr:hover .plates__plate {
-		box-shadow: none;
-		border: none;
+	.plates__button {
+		background: #1453a1;
+		color: rgb(255,255,255);
 	}
 
 }
