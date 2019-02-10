@@ -37,13 +37,14 @@ $(document).ready(function(){
     $('.accordion__information').hide();
     $('.accordion__caption').click(function(){
         $(this).next().slideToggle(500);
+		$(this).toggleClass('accordion__caption_active');
     });
 	
 //sticky-kit
 	
-	var ww=window.innerWidth;
+/*	var ww=window.innerWidth;
 	if(ww>1200){
 		$(".inner-page__form").stick_in_parent();
 		$(document.body).trigger("sticky_kit:recalc");
-	}
+	}*/
 }); 

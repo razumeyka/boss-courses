@@ -152,8 +152,39 @@
 }
 
 .inner-caption {
-	font-size: 30px;
-	margin-bottom: 30px;
+    font-size: 27px;
+    font-weight: 900; 
+    max-width: 940px;
+    margin: 0 auto 30px;
+    line-height: 1.2;
+}
+
+/*main page form*/
+
+.main-screen__form {
+	margin: auto 0 0;	
+	z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(20,83,161,.9);
+    padding: 20px 0 30px;
+	border-radius: 0;
+}
+
+.main-screen__form .form__caption{
+	margin:0;
+}
+
+.main-screen__form .wpcf7-form-control-wrap_button {
+	width: calc(50% - 14px); 
+}
+
+/*inner page form*/
+
+.inner-page__form{
+	padding: 30px 30px 40px;
 }
 
 
@@ -184,8 +215,23 @@
 		margin-top: 150px;
 	}
 	
+	.main-screen__form{
+		background-color: rgb(20, 83, 161);
+		padding: 30px 0 40px;
+	}
+	
+	.main-screen__form .form__caption{
+		margin: 0 auto 20px;
+	}
+	
 	.main-screen__after-caption{
 		display: none;
+	}
+	
+	.main-screen__form .wpcf7-form-control-wrap_button {
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto;
 	}
 	
 }

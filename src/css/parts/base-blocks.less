@@ -109,6 +109,32 @@ h1,h2,h3,h4,h5 {
 	text-align: center;
 }
 
+.button_icon{
+	border-radius: 3px;
+	background-color: #1453a1;
+	height: 50px;
+	font-size: 17px;
+	line-height: 50px;
+	color: #fff;
+	text-align:left;
+	padding: 0 20px 0 65px;
+	position: relative;
+}
+
+.button_icon:before{
+	content:'';
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	position: absolute;
+	top: 5px;
+	left:5px;
+}
+
+.button_icon:hover{
+	background: #104484;
+}
+
 /* caption */
 
 .caption {
@@ -135,8 +161,7 @@ h1,h2,h3,h4,h5 {
 /* double-colums  */
 
 .double-colums {
-    overflow: hidden;
-    padding: 5px;
+    overflow: hidden; 
     display: flex;
     justify-content: space-between;
 }

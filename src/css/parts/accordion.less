@@ -1,41 +1,68 @@
-.accordion__caption {
-	background: #1453a1;
-	font-size: 22px;
-	color: #ffffff;
-	padding: 15px 20px;
-	margin-top: 20px;
-	position: relative;
-	cursor: pointer;
+.accordion__caption { 
+    font-size: 18px; 
+    padding: 15px 70px 15px 20px;
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    text-decoration: none;
+    border: 1px solid #dadada;
+    border-bottom: 5px solid #d0d0d0; 
+    border-radius: 3px;
 }
 
 .accordion__caption:before {
-	content: "";
-	background: #ffffff;
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	right: 20px;
-	top: 20px;
+    content: "";
+    background: #f8be1e;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+
+.accordion__caption:hover{
+	background-color: #eaeaea;
+}
+
+.accordion__caption_active,
+.accordion__caption_active:hover{
+	border-bottom: 1px solid #dadada;
+    background: #1453a1;
+    top: 4px;
+    border-radius: 3px 3px 0 0;
+    color: #fff;
+	border: none;
 }
 
 .accordion__information {
-	box-sizing: border-box;
-	border: 1px solid #1453a1;
-	font-size: 18px;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
+	box-sizing: border-box; 
+    padding: 30px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px; 
+    background-color: #f7f7f7; 
+    border: 1px solid #dadada;
+	border-top: 0;
+    border-radius: 0 0 3px 3px;
 }
 
 .accordion__buttons {
-	margin: 20px 0 20px auto;
+    margin: 30px auto 10px 0;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #adadad;
+    width: 100%;
+}
+
+.accordion__button{
+	margin-right: 10px;
 }
 
 .accordion__form {
-	box-sizing: border-box;
-    max-width: 400px;
-	padding: 40px;
-	margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 400px; 
+    margin: 30px auto 0;
+    background: #61c2d0;
 }
 
 .accordion__form .wpcf7-form-control-wrap {
@@ -60,4 +87,30 @@
 
 @media screen and (max-width: 639px) {
     
+	.accordion__information{
+		padding: 30px 20px 40px;
+	}
+	
+	.accordion__button { 
+		width: 100%;
+		margin: 0 0 20px;
+	}
+	
+	.accordion__button:last-child{
+		margin:0;
+	}
+	
+	.accordion__form {  
+		padding: 0;
+		background: none;
+	}
+	
+	.accordion__form-caption{
+		color:#000;
+	}
+	
+	.accordion__form .wpcf7-form-control{
+		border: 1px solid #d7d7d7;
+	}
+	
 }
