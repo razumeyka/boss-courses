@@ -1,31 +1,76 @@
 
 .teacher {
-	overflow: hidden;
-	margin-bottom: 40px;
+	display: flex;
+	margin-bottom: 80px;
 }
+
+.teacher__photo-wr{ 
+    margin-right: 40px;
+    position: relative; 
+    width: 300px;
+    height: 400px;
+}
+
+.teacher__photo-wr:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    background: #61c2d0;
+}
+
+.teacher__photo-wr:after{
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+    background: #f8be1e;
+}
+
 .teacher__photo {
-	background: red;
-	width: 150px;
-	height: 200px;
-	float: left;
-	margin-right: 20px;
+    background: url(../../images/teacher.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+	position: relative;
+}
+
+.teacher__text{
+	flex: 1;
 }
 
 .teacher__name {
-	font-size: 20px;
-	font-weight: 700;
-	margin-bottom: 10px;
+	font-size: 23px;
+    font-weight: 900;
+    margin-bottom: 15px;
 }
 
 .teacher__description {
 	font-size: 16px;
 }
 
+@media screen and (max-width: 1279px) {
  
-@media screen and (max-width: 500px) {
+	.teacher__photo-wr:before {
+		display: none;
+	}
 
-	.teacher__photo {
-		float: none;
+}
+
+@media screen and (max-width: 767px) {
+	
+	.teacher {
+		display: flex;
+		margin-bottom: 50px;
+		flex-direction: column;
+	}
+	
+	.teacher__photo-wr{
 		margin: 0 auto 20px;
 	}
+	
 }

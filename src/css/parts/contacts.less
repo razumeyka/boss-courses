@@ -1,10 +1,14 @@
 /*contacts page*/
 
 .contacts-full__line{
-	display: flex;
-    padding: 15px 0 15px;
-    border-bottom: 1px solid #d2d2d2;
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
 } 
+
+.contacts-full__line:first-child{
+	padding-top:0;
+}
 
 .contacts-full__line a{
 	text-decoration: none;
@@ -12,11 +16,10 @@
 } 
 
 .contacts-full__label{
-	width: 210px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 20px;
+    width: 200px;
+    padding-right: 15px; 
+    font-weight: 900;
+    font-size: 16px;
 } 
 
 .contacts-full__info{ 
@@ -25,6 +28,10 @@
 
 .contacts-full__info div{
 	margin-bottom: 7px;
+}
+
+.contacts-full__info div:last-child{
+	margin:0;
 }
  
 .map{
