@@ -1,5 +1,6 @@
 @@include('./lib/jquery.fancybox.min.js')
 @@include('./lib/sticky-kit.js')
+@@include('./lib/wpcf7.js')
 
 $(document).ready(function(){
     
@@ -32,19 +33,19 @@ $(document).ready(function(){
 	};
 	setInterval(function(){topslider_change()},3000);
 	
+//sticky-kit
+	var ww=window.innerWidth;
+	if(ww>1200){
+		$(".inner-page__form").stick_in_parent();
+	}
+			
 // accordion
-	
     $('.accordion__information').hide();
     $('.accordion__caption').click(function(){
         $(this).next().slideToggle(500);
 		$(this).toggleClass('accordion__caption_active');
     });
 	
-//sticky-kit
 	
-/*	var ww=window.innerWidth;
-	if(ww>1200){
-		$(".inner-page__form").stick_in_parent();
-		$(document.body).trigger("sticky_kit:recalc");
-	}*/
+	
 }); 
