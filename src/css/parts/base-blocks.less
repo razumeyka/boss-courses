@@ -122,13 +122,21 @@ h1,h2,h3,h4,h5 {
 }
 
 .button_icon:before{
-	content:'';
-	width: 40px;
-	height: 40px;
-	background: #fff;
-	position: absolute;
-	top: 5px;
-	left:5px;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url(../../images/sprites.svg) no-repeat -208px -428px;
+    position: absolute;
+    top: 5px;
+    left: 12px;
+}
+
+.button_icon-download:before{
+	background-position: -263px -429px;
+}
+
+.button_icon-back:before{
+	background-position: -311px -429px;	
 }
 
 .button_icon:hover{

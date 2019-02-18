@@ -13,12 +13,16 @@
 
 .accordion__caption:before {
     content: "";
-    background: #f8be1e;
-    width: 40px;
-    height: 40px;
+    background: url(../../images/sprites.svg) no-repeat -90px -427px;
+    width: 42px;
+    height: 42px;
     position: absolute;
-    right: 10px;
-    top: 7px;
+    right: 9px;
+    top: 6px;
+}
+
+.accordion__caption_active:before{
+	background-position: -144px -427px;
 }
 
 .accordion__caption:hover{
